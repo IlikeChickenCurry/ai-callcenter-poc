@@ -1,4 +1,4 @@
-idata "aws_caller_identity" "current" {}
+data "aws_caller_identity" "current" {}
 
 resource "aws_budgets_budget" "poc_budget" {
   name         = "${var.project_name}-monthly-budget"
